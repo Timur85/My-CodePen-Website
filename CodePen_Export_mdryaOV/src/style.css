@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+#header {
+  background-color: #fff;
+  z-index: 200;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  color: rgb(223, 55, 55);
+  text-shadow: 0 1px 2px #000;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+.top-navigation {
+  top: 10px;
+  font-size: 30px;
+  margin-right: 40px;
+  justify-content: flex-end;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.95);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+#header-img {
+  width: 100px;
+  height: 100px;
+  margin: 7px 20px;
+  padding: 3px;
+  border-radius: 15px;
+}
+
+nav {
+  font-family: "Dancing Script", cursive;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+ul > li {
+  display: inline-block;
+  font-size: 30px;
+  margin-left: 20px;
+}
+ol {
+  display: block;
+  list-style-position: inside;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABkUlEQVQ4T6XUO2xIYRTA8V8Npq5FSLQqJMQoYpG0FVGjCFaDILGKhXgsdO6g6UR0IETC4LF4RBjYDB3KYJFONUhjaJc2R85tvl63t7l8y839vnP+5316/Ns5jp94X1fv6cAbxyUsIoAvsPA/wC24ifM4jNcJe4gRbIr/Lh6G/Ek8xhDe4XpCw9Cf0xV4FAewGReb9LsAI4dHsCedWUpofGfxrO7hS4xiGvuKZO/EUxzDjwJWOrML30pgWJ3CfoTFSvgOBtNQyF/BWexIuYP4VFa6UryRl/E9g3t4hbFMfjyHoXhfKQB+YSt+14tSAm9hA26nQj8+4Dku4AlOJGAvTqWhVVUugWXIIfQIV/F1jfyt6u2mkNuGJ0btTfZfH+bWmpTSwyZgNPID7MZ8EWKlt6LT1cMqBTExjT3cFXgNX7Axc/sXtLrYntujbOj1FtFbDLdtm8ncJOuBBvAR25oES5e/4zQ+txDv5qqK3mw89RxEJWOm79ekzyEiiAY/1BZCU6WiFXqzPS5jJgswkZPTmpJl4ENPFSQKf00AAAAASUVORK5CYII=");
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: rgb(223, 55, 55);
+  text-shadow: 0 1px 2px #000;
+  margin-bottom: 10px;
+  line-height: 60px;
+}
+
+a {
+  color: rgb(223, 55, 55);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 250%;
+}
+h2 {
+  font-size: 200%;
+}
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+  transform-style: inherit;
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.7);
+  background: 50% 50% / cover;
+}
+
+.title {
+  width: auto;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.95);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+.title1 {
+  width: auto;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.9);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+#slide1:before {
+  background-image: url("https://www.prague-stay.com/images/full_image/1920x1200/prague%20ariana%20carpets%205-resize~ariana-carpets-oriental-rugs.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide2 {
+  background: #fff;
+  z-index: 3;
+}
+
+.video-container {
+  position: relative;
+}
+
+#video {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#slide3:before {
+  background-image: url("http://image5.sixthtone.com/image/5/8/610.jpg");
+  transform: translateZ(-1px) scale(2);
+}
+
+#slide3 {
+  box-shadow: none;
+  text-align: center;
+}
+img {
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240, 230, 220, 0.7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+#slide4 {
+  background: #fff;
+  text-align: center;
+  text-shadow: 0 2px 2px #000;
+  font-size: 25px;
+  color: #fff;
+  margin-top: 500px;
+  padding-bottom: 100px;
+  color: rgb(223, 55, 55);
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  margin-top: 50px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  color: rgb(223, 55, 55);
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+  cursor: pointer;
+}
+
+.gallery-text {
+  width: 50%;
+  float: initial;
+}
+
+footer {
+  margin: 10px;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  #header-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title p {
+    font-size: 16px;
+  }
+
+  #video {
+    width: 250px;
+    height: 200px;
+  }
+}
